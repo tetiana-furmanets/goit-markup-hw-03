@@ -1,3 +1,16 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
 
 * {
   margin: 0;
@@ -31,6 +44,15 @@ a:focus {
 button:hover,
 button:focus {
   background-color: #404bbf;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header {
@@ -247,5 +269,29 @@ button:focus {
   font-size: 16px;
   margin: 0 16px 32px 16px;
   color: #434455;
+}
+
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d5ae5;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
