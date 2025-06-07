@@ -76,6 +76,10 @@ button:focus {
   text-decoration: none;
 }
 
+.logo-accent {
+  color: #4d5ae5;
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
