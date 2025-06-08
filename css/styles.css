@@ -76,6 +76,8 @@ img {
   font-weight: 500;
   color: #2e2f42;
   padding: 24px 0;
+  line-height: 1.5;         
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
