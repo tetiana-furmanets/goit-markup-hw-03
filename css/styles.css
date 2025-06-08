@@ -252,33 +252,32 @@ img {
   Footer / Підвал сайту
 ================================= */
 
-:root {
-  --color-cloud: #f4f4fd;
-}
-
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  color: #ffffff;
 }
 
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  line-height: 1.17;
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 
-.footer-logo-accent {
-color: #f4f4fd;
+.footer-accent {
+  color: #f4f4fd;
 }
 
-.footer-description {
+.footer-text {
   max-width: 264px;
-  margin-top: 16px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--footer-text-color);
 }
