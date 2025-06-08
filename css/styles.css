@@ -259,7 +259,6 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  color: #ffffff;
 }
 
 .footer-logo {
@@ -270,18 +269,16 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.footer-accent {
+.footer-logo-accent {
 color: #f4f4fd;
 }
 
-.footer-text {
+.footer-description {
   max-width: 264px;
   margin-top: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-cloud);
+  color: var(--footer-text-color);
 }
