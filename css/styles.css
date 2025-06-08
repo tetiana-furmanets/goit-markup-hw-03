@@ -1,441 +1,277 @@
+/* ===============================
+  Global styles / Глобальні стилі
+================================= */
 
-/* Загальні стилі та обнулення */
-
-/* Visually hides elements but keeps them accessible to screen readers */
-/* Візуально приховує елементи, але залишає доступними для екранних рідерів */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  overflow: hidden;
-}
-
-/* Reset margin and padding for all elements */
-/* Обнуляємо відступи та падінги для всіх елементів */
-* {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455; /* Text color / Колір тексту */
+  background-color: #ffffff;
   margin: 0;
-  padding: 0;
 }
 
-/* Remove default list styles and spacing for ul */
-/* Прибираємо стандартні маркери та відступи для ul */
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-/* Remove underline from links and inherit color */
-/* Прибираємо підкреслення у посилань, колір наслідується */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Body styles: font, text color, background */
-/* Стилі body: шрифт, колір тексту, фон */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Change link color on hover and focus */
-/* Зміна кольору посилань при наведенні та фокусі */
-a:hover,
-a:focus {
-  color: #404bbf;
-}
-
-/* Change button background on hover and focus */
-/* Зміна фону кнопок при наведенні та фокусі */
-button:hover,
-button:focus {
-  background-color: #404bbf;
-}
-
-/* ==================== CONTAINER ==================== */
-/* Контейнер */
-
-/* Container with max width and centered */
-/* Контейнер з максимальною шириною та центруванням */
+/* Container for layout / Контейнер для сітки */
 .container {
-  width: 100%;
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* ==================== HEADER ==================== */
-/* Хедер (шапка) */
+/* ===============================
+  Header styles / Стилі хедера
+================================= */
 
-/* Header bottom border and white background */
-/* Бордер знизу і білий фон хедера */
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
-  background-color: #ffffff;
-}
-
-/* Flex layout for main navigation */
-/* Флекс-контейнер для головної навігації */
-.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
-/* Logo styling: font, color, uppercase */
-/* Логотип: шрифт, колір, верхній регістр */
+/* Logo / Логотип */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
 }
 
-/* Accent color for logo */
-/* Акцентний колір для логотипу */
 .logo-accent {
   color: #2e2f42;
 }
 
-/* Navigation list flex layout with gap */
-/* Флекс-список навігації з відступами */
+/* Navigation / Навігація */
+.main-nav {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-/* Navigation link styles */
-/* Стилі посилань навігації */
 .nav-link {
   font-weight: 500;
-  font-size: 16px;line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 250ms ease-in-out;
+  padding: 24px 0;
 }
 
-/* Hover/focus color change for nav links */
-/* Зміна кольору при наведенні і фокусі */
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
 
-/* Contacts section font style */
-/* Шрифт для секції контактів */
+/* Contacts / Контакти */
 .contacts {
   font-style: normal;
 }
 
-/* Contacts list flex layout with gap */
-/* Флекс-список контактів з відступами */
 .contacts-list {
   display: flex;
   gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-/* Contacts link styles */
-/* Стилі посилань контактів */
 .contacts-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms ease-in-out;
 }
 
-/* Hover/focus color change for contacts links */
-/* Зміна кольору при наведенні і фокусі */
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
 
-/* ==================== HERO ==================== */
-/* Головний блок (Hero) */
+/* ===============================
+  Hero section / Герой-секція
+================================= */
 
-/* Hero background, padding, and center alignment */
-/* Фон героя, відступи, текст по центру */
-.hero {
+.hero-section {
   background-color: #2e2f42;
-  padding: 188px 0;
   text-align: center;
+  padding: 188px 0;
 }
 
-/* Hero title styles */
-/* Стилі заголовку героя */
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  color: #ffffff;
-  margin-bottom: 48px;
+  color: #fff;
   max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 0.02em;
+  margin: 0 auto 48px;
 }
 
-/* Hero button styles */
-/* Стилі кнопки героя */
 .hero-button {
-  letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
   cursor: pointer;
-  transition: background-color 250ms ease-in-out;
 }
 
-/* Button hover/focus background change */
-/* Зміна фону кнопки при наведенні і фокусі */
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
 
-/* ==================== ADVANTAGES ==================== */
-/* Переваги */
+/* ===============================
+  Advantages section / Секція переваг
+================================= */
 
-/* Advantages section padding and background */
-/* Відступи та фон секції переваг */
 .advantages {
   padding: 120px 0;
-  background-color: #ffffff;
 }
 
-/* Advantages list flex layout with gap */
-/* Флекс-список переваг з відступами */
 .advantages-list {
   display: flex;
   gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Each advantages item width calculation */
-/* Ширина кожного елемента переваг */
 .advantages-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
-/* Advantages title styles */
-/* Стилі заголовків переваг */
 .advantages-title {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  color: #2e2f42;
+  font-weight: 500;
   margin-bottom: 8px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  color: #2e2f42;
 }
 
-/* Advantages text styles */
-/* Стилі тексту переваг */
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
-  letter-spacing: 0.02em;
 }
 
-/* ==================== TEAM ==================== */
-/* Команда */
+/* ===============================
+  Team section / Секція "Наша команда"
+================================= */
 
-/* Team section background and padding */
-/* Фон та відступи секції команди */
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
-}
-
-/* Team section header styles */
-/* Стилі заголовку секції команди */
-.team-title {
-  font-weight: 500;
   text-align: center;
-  color: #2e2f42;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  margin-bottom: 72px;
-  text-transform: capitalize;
 }
 
-/* Team list flex layout with gap */
-/* Флекс-список команди з відступами */
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
 .team-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Team item card styles */
-/* Стилі карток учасників команди */
 .team-item {
   background-color: #ffffff;
-  padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
-              0px 1px 1px rgba(0, 0, 0, 0.16),
-              0px 1px 6px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  width: 264px;
+  padding-bottom: 32px;
 }
 
-/* Team member name styles */
-/* Стилі імені учасника */
 .team-name {
+  font-size: 20px;
+  font-weight: 500;
   margin-top: 32px;
   margin-bottom: 8px;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
   color: #2e2f42;
 }
 
-/* Team member position styles */
-/* Стилі посади учасника */
 .team-position {
   font-size: 16px;
-  line-height: 1.5;
   color: #434455;
-  letter-spacing: 0.02em;
 }
 
-/* ==================== PORTFOLIO ==================== */
-/* Портфоліо */
+/* ===============================
+  Portfolio section / Секція портфоліо
+================================= */
 
-/* Portfolio section padding */
-/* Відступи секції портфоліо */
 .portfolio-section {
   padding: 120px 0;
 }
 
-/* Portfolio title styles */
-/* Стилі заголовку портфоліо */
 .portfolio-title {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 72px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
   font-weight: 700;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-/* Portfolio list flex-wrap and gap */
-/* Флекс-список портфоліо з обгортанням і відступами */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   justify-content: center;
 }
 
-/* Portfolio item card styles */
-/* Стилі картки портфоліо */
 .portfolio-item {
-  width: 360px;
-  border: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
   background-color: #ffffff;
 }
 
-/* Portfolio image styles */
-/* Стилі зображення портфоліо */
-.portfolio-image {
-  display: block;
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-bottom: 1px solid #e7e9fc;
+.portfolio-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 32px 0 8px 16px;
+  color: #2e2f42;
 }
 
-/* Portfolio description padding */
-/* Відступи опису портфоліо */
-.portfolio-description {
-  padding: 24px;
+.portfolio-text {
   font-size: 16px;
-  line-height: 1.5;
   color: #434455;
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
 
-/* ==================== FOOTER ==================== */
-/* Футер */
+/* ===============================
+  Footer / Підвал сайту
+================================= */
 
-/* Footer padding and background */
-/* Відступи та фон футера */
-.page-footer {
+.footer {
   background-color: #2e2f42;
-  padding: 56px 0;
+  padding: 100px 0;
   color: #ffffff;
-  text-align: center;
-  font-size: 16px;
 }
 
-/* Footer link styles */
-/* Стилі посилань у футері */
-.page-footer a {
-  color: #ffffff;
-  text-decoration: underline;
-  transition: color 250ms ease-in-out;
-}
-
-/* Footer link hover/focus color change */
-/* Зміна кольору посилань у футері при наведенні та фокусі */
-.page-footer a:hover,
-.page-footer a:focus {
-  color: #4d5ae5;
-}
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;a
+  color: #4d5ae5;
   text-transform: uppercase;
-  text-decoration: none;
 }
-.footer-accent{
-color: #f4f4fd;
 
+.footer-accent {
+  color: #f4f4fd;
 }
+
 .footer-text {
+  max-width: 264px;
+  margin-top: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
 }
