@@ -4,7 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455; /* Text color / Колір тексту */
+  color: #434455; 
   background-color: #ffffff;
   margin: 0;
 }
@@ -51,6 +51,8 @@ img {
   font-weight: 700;
   font-size: 18px;
   color: #4d5ae5;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -73,6 +75,10 @@ img {
   font-weight: 500;
   color: #2e2f42;
   padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
 }
 
 .nav-link:hover,
@@ -92,6 +98,9 @@ img {
 
 .contacts-link {
   color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .contacts-link:hover,
@@ -115,6 +124,7 @@ img {
   color: #fff;
   max-width: 496px;
   margin: 0 auto 48px;
+  letter-spacing: 0.02emж
 }
 
 .hero-button {
@@ -127,6 +137,8 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .hero-button:hover,
@@ -156,12 +168,15 @@ img {
   font-weight: 500;
   margin-bottom: 8px;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
+  letter-spacing: 0.02em;
 }
 
 /* ===============================
@@ -179,6 +194,9 @@ img {
   font-weight: 700;
   color: #2e2f42;
   margin-bottom: 72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .team-list {
@@ -199,11 +217,15 @@ img {
   margin-top: 32px;
   margin-bottom: 8px;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team-position {
   font-size: 16px;
   color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ===============================
@@ -220,6 +242,9 @@ img {
   font-weight: 700;
   color: #2e2f42;
   margin-bottom: 72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .portfolio-list {
@@ -239,6 +264,8 @@ img {
   font-weight: 500;
   margin: 32px 0 8px 16px;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-text {
@@ -246,6 +273,8 @@ img {
   color: #434455;
   margin-left: 16px;
   margin-bottom: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* ===============================
@@ -267,14 +296,18 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 
-.footer-accent {
+.footer-logo-accent {
   color: #f4f4fd;
 }
 
 .footer-text {
- color: #f4f4fd;
+  max-width: 264px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #F4F4FD;
 }
