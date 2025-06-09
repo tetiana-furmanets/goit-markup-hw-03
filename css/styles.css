@@ -158,6 +158,10 @@ img {
   text-transform: capitalize;
 }
 
+.team-item {
+  background-color: #ffffff;
+}
+
 .team-name {
   font-size: 20px;
   font-weight: 500;
