@@ -12,7 +12,6 @@ body {
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 a {
@@ -21,16 +20,13 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
-  height: auto;
 }
 
 /* Container for layout / Контейнер для сітки */
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* ===============================
@@ -38,11 +34,7 @@ img {
 ================================= */
 
 .page-header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 24px 0;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 /* Logo / Логотип */
@@ -62,19 +54,14 @@ img {
 
 /* Navigation / Навігація */
 .main-nav {
-  display: flex;
-  gap: 40px;
 }
 
 .nav-list {
-  display: flex;
-  gap: 40px;
 }
 
 .nav-link {
   font-weight: 500;
   color: #2e2f42;
-  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -92,8 +79,6 @@ img {
 }
 
 .contacts-list {
-  display: flex;
-  gap: 40px;
 }
 
 .contacts-link {
@@ -115,7 +100,6 @@ img {
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
-  padding: 188px 0;
 }
 
 .hero-title {
@@ -134,8 +118,6 @@ img {
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -151,12 +133,9 @@ img {
 ================================= */
 
 .advantages {
-  padding: 120px 0;
 }
 
 .advantages-list {
-  display: flex;
-  gap: 24px;
 }
 
 .advantages-item {
@@ -200,14 +179,11 @@ img {
 }
 
 .team-list {
-  display: flex;
-  gap: 24px;
   justify-content: center;
 }
 
 .team-item {
   background-color: #ffffff;
-  border-radius: 0 0 4px 4px;
   padding-bottom: 32px;
 }
 
@@ -233,7 +209,6 @@ img {
 ================================= */
 
 .portfolio-section {
-  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -248,14 +223,11 @@ img {
 }
 
 .portfolio-list {
-  display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
   justify-content: center;
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
   background-color: #ffffff;
 }
 
@@ -283,12 +255,10 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
   color: #ffffff;
 }
 
 .footer-logo {
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
