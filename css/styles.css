@@ -1,6 +1,15 @@
 /* ===============================
   Global styles / Глобальні стилі
 ================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -12,6 +21,7 @@ body {
 ul {
   list-style: none;
   margin: 0;
+  padding-left:0;
 }
 
 a {
@@ -21,12 +31,17 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 /* Container for layout / Контейнер для сітки */
 .container {
   max-width: 1158px;
-  margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ===============================
@@ -236,3 +251,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+
+
+
+
