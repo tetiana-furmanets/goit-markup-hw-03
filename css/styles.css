@@ -242,8 +242,10 @@ img {
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+  
+.team-info{
   padding: 32px 0 32px;
-  }
+}
 
 .team-name {
   font-size: 20px;
@@ -290,12 +292,14 @@ img {
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
   background-color: #ffffff;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  padding: 32px 16px;
   margin-bottom: 8px;
   }
 
+    .portfolio-info {
+      padding: 32px 16px;
+      border: 1px solid #e7e9fc;
+      border-top: none;
+     
   .portfolio-item:hover,
   .portfolio-item:focus-within {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
