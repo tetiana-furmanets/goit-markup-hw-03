@@ -74,7 +74,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 24px 0 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
 }
 
