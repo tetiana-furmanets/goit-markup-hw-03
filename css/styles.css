@@ -87,14 +87,13 @@ img {
   display: flex;
   gap: 40px; 
 }
-}
+
 .nav-link{
   font-weight: 500;
   color: #2e2f42;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -292,11 +291,12 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
-  margin-bottom: 8px
+  margin-bottom: 8px;
   }
 
   .portfolio-item:hover,
   .portfolio-item:focus-within {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
 .portfolio-subtitle {
